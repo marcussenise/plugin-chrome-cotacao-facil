@@ -7,5 +7,10 @@
     "action":{
         "default_popup": "index.html",
         "default_title": "Cotação do dia"
+    },
+    "icons":{
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
     }
 }
