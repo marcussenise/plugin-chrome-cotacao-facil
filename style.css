@@ -1,0 +1,75 @@
+.filter-switch-item label {
+    cursor: pointer;
+}
+
+.filter-switch-item input:checked + label{
+background-color: white;
+color: #3182CE;
+font-weight: bold;
+transition: background-color 0.2s ease-in; 
+}
+
+.filter-switch-item input:not(:checked) + label{
+    background-color: transparent;
+    font-weight: bold;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ol, ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+} 
+
+.currencies, .exchange-last-days{
+    border-radius: 5px;
+    justify-content: space-between;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.currencies ul, .exchange-last-days ul{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e2e8f0;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.currencies ul li, .exchange-last-days ul li{
+    margin: 2px;
+    background-color: transparent;
+    color: #718096;
+}
+
+.currencies ul li:hover, .exchange-last-days ul li:hover{
+    color: black;
+}
+
+.rodapé p{
+    padding-top: 6px;
+    font-size: small;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

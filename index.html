@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cotação do dia</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-3" style="width: 450px">
+      <h2 class="text-center"><span id="moedaEscolhida"></span> hoje:</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Compra</th>
+            <th>Venda</th>
+            <th>Variação</th>
+            <th>% variação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="compra"></td>
+            <td id="venda"></td>
+            <td id="variação"></td>
+            <td id="porcentagem-variacao"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+      <div class="currencies">
+        <ul>
+          <li class="filter-switch-item flex relative h-8 bg-gray-300x">            
+            <input
+              type="radio"
+              name="filter4"
+              id="filter4-0"
+              class="sr-only"
+              checked
+            />
+            <label
+              id="USD"
+              for="filter4-0"
+              class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 rounded"
+            >
+              Dólar
+            </label>
+          </li>
+
+          <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+            <input type="radio" name="filter4" id="filter4-1" class="sr-only" />
+            <label
+              id="EUR"
+              for="filter4-1"
+              class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 rounded"
+            >
+              Euro
+            </label>
+          </li>
+
+          <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+            <input type="radio" name="filter4" id="filter4-2" class="sr-only" />
+            <label
+            id="GBP"
+              for="filter4-2"
+              class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 rounded"
+            >
+              Libra
+            </label></li>
+        </ul>
+      </div>
+
+      <p>O valor de compra hoje é o <span id="ranking"></span>° melhor dos últimos <span id="texto-dias">30</span> dias</p>
+
+      <div class="exchange-last-days">
+        <ul>
+          <li class="filter-switch-item flex relative h-8 bg-gray-300x">            
+            <input
+              type="radio"
+              name="last-days"
+              id="30days"
+              class="sr-only"
+              checked
+            />
+            <label
+              id="30"
+              for="30days"
+              class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 rounded"
+            >
+              30
+            </label>
+          </li>
+
+          <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+            <input type="radio" name="last-days" id="60days" class="sr-only" />
+            <label
+              id="60"
+              for="60days"
+              class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 rounded"
+            >
+              60
+            </label>
+          </li>
+
+          <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+            <input type="radio" name="last-days" id="90days" class="sr-only" />
+            <label
+            id="90"
+              for="90days"
+              class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 rounded"
+            >
+              90
+            </label></li>
+        </ul>
+      </div>
+
+      <div class="rodapé">
+        <p>Se esta ferramenta te ajudou a economizar, considere colaborar para este projeto, que é gratuito e open-source! ☺️ Obrigado!</p>
+        <p>Pix: marcus.senise@hotmail.com </p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/marcus-senise/">Marcus Senise</a></p>
+      </div>
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
