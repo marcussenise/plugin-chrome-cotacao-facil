@@ -1,7 +1,7 @@
 {
     "name": "Cotação fácil",
     "version": "1.0.0",
-    "description": "Cotação do dia na moeda desejada, com histórico dos últimos dias",
+    "description": "Cotação do dia na moeda desejada, com um ranking comparativo dos últimos dias",
     "manifest_version": 3,
     "author": "Marcus Senise",
     "action":{
